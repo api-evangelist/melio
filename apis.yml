@@ -1,0 +1,91 @@
+aid: melio
+name: Melio
+description: >-
+  Melio is a B2B payments platform for small businesses that provides a REST API
+  for managing bills, vendors, payment methods, scheduling payments, and syncing
+  with accounting software including QuickBooks, Xero, and NetSuite. Melio
+  enables software companies to embed bill pay, vendor payments, and invoicing
+  directly inside their products with ACH and card options. Founded in 2018,
+  Melio has processed over $100B in payments for 100,000+ business users and
+  2M+ vendors.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/melio/refs/heads/main/apis.yml
+created: "2026-06-13"
+modified: "2026-06-13"
+specificationVersion: "0.19"
+tags:
+  - B2B Payments
+  - Accounts Payable
+  - Accounts Receivable
+  - Bill Pay
+  - Vendor Payments
+  - ACH
+  - FinTech
+  - Small Business
+  - Embedded Finance
+  - Payment Processing
+
+apis:
+  - name: Melio Payments API
+    description: >-
+      REST API for managing bills, vendors, payment methods, and scheduling
+      payments. Supports ACH transfers, check payments, wire transfers, and
+      international payments. Includes webhook support, a sandbox environment,
+      and integrations with accounting software.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://meliopayments.com/partners/
+    baseURL: https://api.meliopayments.com
+    tags:
+      - Payments
+      - Bills
+      - Vendors
+      - ACH
+      - Webhooks
+    properties:
+      - type: Documentation
+        url: https://meliopayments.com/partners/
+      - type: Sandbox
+        url: https://alpha-api.meliopayments.com/
+      - type: OpenAPI
+        url: https://alpha-api.meliopayments.com/
+      - type: PostmanCollection
+        url: https://meliopayments.com/partners/
+    contact:
+      - FN: Melio Support
+        email: support@melio.com
+        url: https://help.melio.com/hc/en-us
+
+common:
+  - type: Website
+    url: https://meliopayments.com/
+  - type: Documentation
+    url: https://meliopayments.com/partners/
+  - type: GitHubOrg
+    url: https://github.com/melio-payments
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/meliopayments/
+  - type: Blog
+    url: https://meliopayments.com/blog/
+  - type: Pricing
+    url: https://meliopayments.com/pricing/
+  - type: StatusPage
+    url: https://meliopayments.com/security/
+  - type: X
+    url: https://x.com/MelioPayments
+  - type: Plans
+    url: plans/melio-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/melio-rate-limits.yml
+  - type: FinOps
+    url: finops/melio-finops.yml
+  - type: TermsOfService
+    url: https://meliopayments.com/legal/terms-of-service
+  - type: PrivacyPolicy
+    url: https://meliopayments.com/legal/privacy-policy
+  - type: HelpCenter
+    url: https://help.melio.com/hc/en-us
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

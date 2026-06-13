@@ -1,0 +1,63 @@
+name: Melio API Rate Limits
+description: >-
+  Rate limit details for the Melio Payments API. Melio's API access is
+  restricted to Platinum (enterprise) tier customers. Public rate limit
+  specifications are not published; enterprise customers receive custom
+  rate limit configurations through their partnership agreement.
+specificationVersion: "0.1"
+url: https://meliopayments.com/partners/
+created: "2026-06-13"
+modified: "2026-06-13"
+
+notes: >-
+  Melio does not publicly document specific rate limits for their API.
+  Rate limits are governed by enterprise partnership agreements for Platinum
+  tier customers. A sandbox environment is available at
+  https://alpha-api.meliopayments.com/ for development and testing.
+
+environments:
+  - name: Sandbox
+    url: https://alpha-api.meliopayments.com/
+    description: >-
+      Sandbox environment for development and testing. Available to
+      developers before going live. Rate limits in sandbox may differ
+      from production.
+    rateLimits:
+      - type: Requests
+        description: Sandbox rate limits are not publicly documented.
+        contact: support@melio.com
+
+  - name: Production
+    url: https://api.meliopayments.com/
+    description: >-
+      Production environment available to Platinum tier API partners.
+      Custom rate limits are negotiated per enterprise agreement.
+    rateLimits:
+      - type: Requests
+        description: >-
+          Custom rate limits negotiated per enterprise partnership agreement.
+          Contact Melio's partnership team for specifics.
+        contact: https://meliopayments.com/partners/
+
+authentication:
+  - type: OAuth
+    description: >-
+      Melio uses OAuth for API authentication. An OAuth playground is
+      available for developers. Specific OAuth flow details are provided
+      to API partners through their developer onboarding.
+
+webhooks:
+  description: >-
+    Melio supports webhooks for real-time event notifications. A webhooks
+    management API is available for configuring and managing webhook
+    subscriptions.
+  rateLimits:
+    - type: Delivery
+      description: Webhook delivery rate limits are not publicly documented.
+
+contact:
+  - FN: Melio Partnerships
+    url: https://meliopayments.com/partners/
+  - FN: Melio Support
+    email: support@melio.com
+    url: https://help.melio.com/hc/en-us

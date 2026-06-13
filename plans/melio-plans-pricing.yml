@@ -1,0 +1,201 @@
+name: Melio Plans & Pricing
+description: >-
+  Melio offers five subscription tiers for small businesses, ranging from a free
+  plan to a custom enterprise tier. API access is available exclusively on the
+  Platinum (invite-only) tier for high-volume businesses. All plans include
+  ACH transfers, bill pay, and accounting software integrations.
+specificationVersion: "0.1"
+url: https://meliopayments.com/pricing/
+created: "2026-06-13"
+modified: "2026-06-13"
+
+plans:
+  - name: Go
+    description: Free plan for simple bill pay with no monthly subscription.
+    url: https://meliopayments.com/pricing/
+    price: 0
+    unit: month
+    currency: USD
+    features:
+      - Single user
+      - 5 free ACH payments per month ($0.50 per additional)
+      - QuickBooks Online sync
+      - Xero sync
+      - Basic accounts payable
+    limits:
+      - name: Users
+        value: 1
+      - name: Free ACH payments
+        value: 5
+        unit: month
+    fees:
+      - type: ACH (additional)
+        amount: 0.50
+        unit: transaction
+      - type: Check
+        amount: 1.50
+        unit: transaction
+      - type: Credit card payment
+        amount: 2.9
+        unit: percent
+
+  - name: Core
+    description: Essential tools for growing businesses with approval workflows.
+    url: https://meliopayments.com/pricing/
+    price: 25
+    unit: month
+    currency: USD
+    annualPrice: 20
+    annualUnit: month
+    features:
+      - Multiple users ($10/month per additional user)
+      - 20 free ACH payments per month
+      - QuickBooks Online sync
+      - Xero sync
+      - Batch payments
+      - Approval workflows
+      - W-9 collection
+    limits:
+      - name: Free ACH payments
+        value: 20
+        unit: month
+    fees:
+      - type: Additional user
+        amount: 10
+        unit: user/month
+      - type: ACH (additional)
+        amount: 0.50
+        unit: transaction
+
+  - name: Boost
+    description: Advanced tools with custom approval rules and QuickBooks Desktop sync.
+    url: https://meliopayments.com/pricing/
+    price: 55
+    unit: month
+    currency: USD
+    annualPrice: 44
+    annualUnit: month
+    features:
+      - Multiple users ($10/month per additional user)
+      - 50 free ACH payments per month
+      - QuickBooks Online sync
+      - Xero sync
+      - QuickBooks Desktop sync
+      - Batch payments
+      - Approval workflows
+      - Custom approval rules
+      - W-9 collection
+      - Premium phone support
+    limits:
+      - name: Free ACH payments
+        value: 50
+        unit: month
+    fees:
+      - type: Additional user
+        amount: 10
+        unit: user/month
+      - type: ACH (additional)
+        amount: 0.50
+        unit: transaction
+
+  - name: Unlimited
+    description: Full-featured plan with unlimited seats, ACH payments, and NetSuite sync.
+    url: https://meliopayments.com/pricing/
+    price: 80
+    unit: month
+    currency: USD
+    annualPrice: 64
+    annualUnit: month
+    features:
+      - Unlimited users
+      - Unlimited free ACH payments
+      - QuickBooks Online sync
+      - Xero sync
+      - QuickBooks Desktop sync
+      - NetSuite sync
+      - Batch payments
+      - Approval workflows
+      - Custom approval rules
+      - W-9 collection
+      - Premium phone support
+    limits:
+      - name: Users
+        description: Unlimited
+      - name: ACH payments
+        description: Unlimited free
+
+  - name: Platinum
+    description: >-
+      Invite-only enterprise tier for high-volume businesses processing over
+      $300K/month in credit card payments. Includes API access, custom
+      transaction fees, and enterprise-level integrations.
+    url: https://meliopayments.com/pricing/
+    price: custom
+    features:
+      - Unlimited users
+      - Unlimited free ACH payments
+      - All accounting integrations
+      - Custom integrations and API access
+      - Custom transaction fees
+      - Preferred card rates
+      - Card-to-wire transfer options
+      - Enterprise-level integrations
+      - Dedicated support
+    eligibility: Invite-only for businesses processing $300K+/month in credit card payments
+
+transactionFees:
+  bankAccount:
+    - type: ACH
+      amount: 0.50
+      unit: transaction
+    - type: Check
+      amount: 1.50
+      unit: transaction
+    - type: Fast check
+      amount: 20.00
+      unit: transaction
+    - type: Overnight check
+      amount: 50.00
+      unit: transaction
+    - type: Instant transfer
+      amount: 1.0
+      unit: percent
+      cap: 75.00
+    - type: Same-day wire
+      amount: 1.0
+      unit: percent
+      minimum: 10.00
+      cap: 75.00
+  creditCard:
+    - type: Same-day ACH
+      amount: 2.9
+      unit: percent
+    - type: Check
+      amount: 2.9
+      unit: percent
+    - type: Fast check
+      amount: 2.9
+      unit: percent
+      additionalFee: 20.00
+    - type: Overnight check
+      amount: 2.9
+      unit: percent
+      additionalFee: 50.00
+  international:
+    - type: ACH (USD)
+      amount: 20.00
+      unit: transaction
+    - type: ACH fast (USD)
+      amount: 1.0
+      unit: percent
+      minimum: 30.00
+      cap: 95.00
+    - type: Card (USD)
+      amount: 2.9
+      unit: percent
+      additionalFee: 20.00
+  payOverTime:
+    - type: Financing fee
+      amount: 2.9
+      unit: percent
+      description: Starting rate

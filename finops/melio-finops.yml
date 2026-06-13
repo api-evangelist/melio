@@ -1,0 +1,146 @@
+name: Melio FinOps Framework
+description: >-
+  FinOps cost management reference for the Melio Payments API, aligned with
+  the FinOps Foundation FOCUS (FinOps Open Cost and Usage Specification) 1.0
+  standard. Covers cost visibility, optimization, and governance for teams
+  integrating the Melio B2B payments platform.
+specificationVersion: "1.0"
+focusVersion: "1.0"
+url: https://meliopayments.com/pricing/
+created: "2026-06-13"
+modified: "2026-06-13"
+
+provider:
+  name: Melio
+  url: https://meliopayments.com/
+  category: B2B Payments / FinTech
+
+costModel:
+  type: Subscription + Transaction
+  description: >-
+    Melio uses a hybrid model combining monthly subscription fees with
+    per-transaction fees. API access is available only on the Platinum
+    (custom/invite-only) tier. Most transaction costs vary by payment
+    method and delivery speed.
+
+focusDimensions:
+  - dimension: BilledCost
+    description: Monthly subscription fee plus per-transaction fees incurred.
+    components:
+      - SubscriptionFee: Monthly plan fee (Go $0, Core $25, Boost $55, Unlimited $80, Platinum custom)
+      - TransactionFee: Per-payment fee based on method and speed
+      - UserFee: Additional user seats on Core and Boost plans ($10/user/month)
+
+  - dimension: ListUnitPrice
+    description: Published per-transaction prices before any volume discounts.
+    examples:
+      - ACH transfer: $0.50 per transaction (when over plan-included quota)
+      - Check: $1.50 per transaction
+      - Credit card: 2.9% of payment amount
+      - Same-day wire: 1% (min $10, max $75)
+      - International ACH: $20 flat
+
+  - dimension: EffectiveUnitPrice
+    description: >-
+      Actual cost after plan-included free transactions. Core includes 20 free
+      ACH/month, Boost includes 50 free ACH/month, Unlimited includes
+      unlimited free ACH. Platinum customers receive custom negotiated pricing.
+
+  - dimension: PricingCategory
+    value: Subscription + On-Demand
+    description: >-
+      Base subscription unlocks included transaction allowances; additional
+      usage is billed on-demand per transaction.
+
+  - dimension: SkuId
+    values:
+      - go-free: Free tier, 1 user, 5 ACH/month
+      - core-monthly: $25/month base
+      - core-annual: $20/month billed annually
+      - boost-monthly: $55/month base
+      - boost-annual: $44/month billed annually
+      - unlimited-monthly: $80/month base
+      - unlimited-annual: $64/month billed annually
+      - platinum-custom: Custom enterprise pricing
+
+  - dimension: ServiceName
+    value: Melio Payments API
+    subServices:
+      - ACH Payments
+      - Check Payments
+      - Wire Transfers
+      - International Payments
+      - Card Payments
+      - Pay Over Time (Financing)
+      - Accounts Receivable
+      - Webhook Notifications
+
+costOptimization:
+  recommendations:
+    - name: Annual Billing Discount
+      description: >-
+        Switch to annual billing to save 20% on subscription fees across
+        Core ($25 to $20/month), Boost ($55 to $44/month), and Unlimited
+        ($80 to $64/month) plans.
+      savingsPotential: Up to 20%
+
+    - name: Plan Right-Sizing
+      description: >-
+        Select the plan tier that matches your monthly ACH volume. If
+        you send fewer than 5 ACH payments per month, the Go free plan
+        suffices. If you send fewer than 20, Core is cost-efficient.
+        At 50+ ACH payments, Boost or Unlimited reduces per-transaction
+        overage costs.
+
+    - name: ACH vs Card
+      description: >-
+        Prefer ACH transfers over credit card payments when timing allows.
+        ACH costs $0.50 or is free (on higher tiers) versus 2.9% for credit
+        card payments, representing significant savings on large invoices.
+
+    - name: Batching Payments
+      description: >-
+        Use batch payments (available on Core and above) to consolidate
+        multiple vendor payments into single runs, reducing operational
+        overhead and ensuring efficient use of monthly ACH allowances.
+
+    - name: Avoid Express Fees
+      description: >-
+        Fast check ($20) and overnight check ($50) add significant per-
+        transaction fees. Plan payment schedules to use standard delivery
+        and avoid premium delivery surcharges where possible.
+
+governance:
+  apiAccess:
+    description: >-
+      API access is gated behind the invite-only Platinum tier, requiring
+      a partnership agreement. Internal governance should ensure API usage
+      is tracked per the partnership agreement terms.
+    tier: Platinum (invite-only, $300K+/month credit card volume)
+
+  costAllocation:
+    description: >-
+      Assign Melio subscription and transaction costs to appropriate cost
+      centers based on business unit, vendor category, or project. Use
+      Melio's accounting software sync (QuickBooks, Xero, NetSuite) to
+      map payments to GL accounts for accurate cost allocation.
+
+  budgeting:
+    description: >-
+      Establish monthly budgets for subscription fees and estimated
+      transaction volumes. Monitor ACH usage against plan-included quotas
+      to anticipate overage charges. Account for international payment
+      flat fees ($20 per transaction) in cross-border payment budgets.
+
+  tagging:
+    description: >-
+      Map Melio payment categories to internal cost tags using accounting
+      software integrations. Tag by vendor type, department, or project
+      to enable granular FinOps reporting.
+
+contact:
+  - FN: Melio Partnerships (API/Enterprise)
+    url: https://meliopayments.com/partners/
+  - FN: Melio Support
+    email: support@melio.com
+    url: https://help.melio.com/hc/en-us
