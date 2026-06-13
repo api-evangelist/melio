@@ -1,0 +1,83 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "melio": "https://meliopayments.com/vocab#",
+    "aid": "https://apis.io/vocab#aid",
+    "provider": {
+      "@id": "melio:provider",
+      "@type": "@id"
+    },
+    "FinancialService": "https://schema.org/FinancialService",
+    "PaymentService": "https://schema.org/PaymentService",
+    "bill": "melio:bill",
+    "vendor": "melio:vendor",
+    "paymentMethod": "melio:paymentMethod",
+    "paymentRequest": "melio:paymentRequest",
+    "paymentIntent": "melio:paymentIntent",
+    "webhookEvent": "melio:webhookEvent",
+    "achTransfer": "melio:achTransfer",
+    "checkPayment": "melio:checkPayment",
+    "wireTransfer": "melio:wireTransfer",
+    "internationalPayment": "melio:internationalPayment",
+    "accountingSync": "melio:accountingSync",
+    "sandbox": "melio:sandbox",
+    "embeddedPayments": "melio:embeddedPayments",
+    "billPay": "melio:billPay",
+    "invoicing": "melio:invoicing",
+    "accountsPayable": "melio:accountsPayable",
+    "accountsReceivable": "melio:accountsReceivable",
+    "smallBusiness": "melio:smallBusiness",
+    "partnerAPI": "melio:partnerAPI"
+  },
+  "@type": "FinancialService",
+  "@id": "https://meliopayments.com/",
+  "name": "Melio",
+  "description": "B2B payments platform for small businesses providing REST API for managing bills, vendors, payment methods, scheduling payments, and syncing with accounting software.",
+  "url": "https://meliopayments.com/",
+  "provider": {
+    "@type": "Organization",
+    "name": "Melio Payments",
+    "url": "https://meliopayments.com/",
+    "foundingDate": "2018",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "support@melio.com",
+      "url": "https://help.melio.com/hc/en-us",
+      "contactType": "customer support"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://meliopayments.com/pricing/"
+  },
+  "termsOfService": "https://meliopayments.com/legal/terms-of-service",
+  "privacyPolicy": "https://meliopayments.com/legal/privacy-policy",
+  "sameAs": [
+    "https://github.com/melio-payments",
+    "https://www.linkedin.com/company/meliopayments/",
+    "https://x.com/MelioPayments"
+  ],
+  "melio:apiBase": "https://api.meliopayments.com",
+  "melio:sandboxBase": "https://alpha-api.meliopayments.com/",
+  "melio:partnerPage": "https://meliopayments.com/partners/",
+  "melio:helpCenter": "https://help.melio.com/hc/en-us",
+  "melio:capabilities": [
+    "achTransfer",
+    "checkPayment",
+    "wireTransfer",
+    "internationalPayment",
+    "billPay",
+    "invoicing",
+    "accountsPayable",
+    "accountsReceivable",
+    "embeddedPayments",
+    "accountingSync",
+    "webhookEvents",
+    "sandboxEnvironment"
+  ],
+  "melio:accountingIntegrations": [
+    "QuickBooks",
+    "Xero",
+    "NetSuite"
+  ]
+}
