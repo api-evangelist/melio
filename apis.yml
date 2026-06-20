@@ -9,7 +9,7 @@ description: >-
   Melio has processed over $100B in payments for 100,000+ business users and
   2M+ vendors.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/melio/refs/heads/main/apis.yml
 created: "2026-06-13"
 modified: "2026-06-13"
@@ -33,7 +33,7 @@ apis:
       payments. Supports ACH transfers, check payments, wire transfers, and
       international payments. Includes webhook support, a sandbox environment,
       and integrations with accounting software.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://meliopayments.com/partners/
     baseURL: https://api.meliopayments.com
     tags:
