@@ -1,51 +1,14 @@
 {
-  "provider": "melio",
-  "blogUrl": "https://meliopayments.com/blog/",
-  "lastFetched": "2026-06-13",
-  "posts": [
-    {
-      "title": "The Intentional Firm: 10 predictions to navigate the 2026 accounting landscape",
-      "url": "https://meliopayments.com/blog/10-accounting-predictions-to-navigate-2026/",
-      "date": "2026-01-29",
-      "updated": "2026-04-30",
-      "category": "Accountants"
-    },
-    {
-      "title": "How to price your services as an accountant",
-      "url": "https://meliopayments.com/blog/how-much-should-i-charge-my-clients-the-2025-pricing-guide-for-accountants/",
-      "date": "2025-07-15",
-      "updated": "2026-04-30",
-      "category": "Accountants"
-    },
-    {
-      "title": "Your payment process is costing you cash flow. Here's how to fix it.",
-      "url": "https://meliopayments.com/blog/your-payment-process-is-costing-you-cash-flow-heres-how-to-fix-it/",
-      "date": "2026-04-28",
-      "category": "Financial literacy"
-    },
-    {
-      "title": "Reclaim 19 hours a week: the time-saving guide for accountants",
-      "url": "https://meliopayments.com/blog/time-saving-guide-for-accountants/",
-      "date": "2025-09-12",
-      "category": "Accountants"
-    },
-    {
-      "title": "How to pay 1099 contractors",
-      "url": "https://meliopayments.com/blog/how-to-pay-1099-contractors/",
-      "date": "2026-01-06",
-      "category": "Payments"
-    }
-  ],
   "repo": "melio",
   "feeds": [
     {
-      "source": "https://www.linkedin.com/company/meliopayments/",
-      "feed_url": "https://www.linkedin.com/company/meliopayments/",
-      "title": "",
+      "source": "https://meliopayments.com/blog/",
+      "feed_url": "",
       "saved": 0,
-      "method": "none"
+      "method": "agent-scrape"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:53:24Z",
+  "agent_pulled": "2026-06-27"
 }
