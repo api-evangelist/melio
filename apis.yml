@@ -57,6 +57,10 @@ apis:
         url: https://help.melio.com/hc/en-us
 
 common:
+  - type: VulnerabilityDisclosure
+    url: security/melio-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/melio-domain-security.yml
   - type: Website
     url: https://meliopayments.com/
   - type: Documentation
