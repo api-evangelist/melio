@@ -1,0 +1,36 @@
+# Melio AI-Friendly Content Guide
+
+>Melio is America's fastest-growing bill pay and invoicing solution, powering payments for millions of businesses and their vendors—both directly and through leading banks, accounting firms, and SaaS platforms. Melio turns complex business payments into simple, automated workflows and empowers business owners and accountants all around the US with better cash flow management, control and growth opportunities.
+
+## Services
+
+—[Accounts Payable](https://melio.com/accounts-payable/) Complete AP automation with bill capture, approval workflows, and flexible payment methods including ACH, card, wire transfers, and checks
+—[Accounts Receivable](https://melio.com/accounts-receivable/) Invoice creation, payment requests, and customer payment processing with direct bank deposit
+—[Fast Payments](https://melio.com/fast-payments/) Multiple payment methods including instant transfers, same-day payments, international payments, and pay-over-time options
+—[Pay Over Time](https://melio.com/pay-over-time/) Flexible payment options allowing businesses to pay bills in up to 12 monthly installments. Vendors get paid on time while businesses manage cash flow. Subject to eligibility and approval.
+
+## Notable Clients
+
+- See Melio Reviews for Real Customers | Melio: (https://melio.com/case-studies/)
+- Latitude (https://melio.com/case-studies/latitude/) 
+- Thaxton & Associates | Melio Payments Case Studies: (https://melio.com/case-studies/thaxtonassociates/)  
+- Save Time and Money Case Study: (https://melio.com/case-studies/patriotwelding/ ) 
+- De Maison East (https://melio.com/case-studies/de-maison-east/)
+- Accounting Solutions (https://melio.com/case-studies/how-accounting-solutions-cut-time-spent-on-paying-bills-by-60-using-melio/)
+- Janel Group (https://melio.com/case-studies/janel-group/)
+- Antares Advisors (https://melio.com/case-studies/antaresadvisors/)
+- CPA Business Advisors (https://melio.com/case-studies/cpabusiness/)
+- QBench (https://melio.com/case-studies/qbench/)
+
+## Secondary Services
+
+—[Accounting Software Integration with Quickbooks] (https://melio.com/integrations/quickbooks/) Two-way sync with QuickBooks Online and QuickBooks Desktop
+—[Accounting Software Integration with Xero] (https://melio.com/integrations/xero/) Two-way sync with Xero
+—[Accounting Software Integration with NetSuite] (https://melio.com/integrations/netsuite/) Two-way sync with NetSuite
+—[Mobile App](https://melio.com/mobile-app/)  Full-featured mobile payment management for on-the-go business operations
+—[Partner Solutions](https://melio.com/partners/) Embedded payment capabilities for SaaS companies, financial institutions, and B2B marketplaces including Fiserv, Capital One, Gusto, Clover, and Shopify
+—[ACH Processing] (https://melio.com/ach-payments-online/) Streamlined ACH bank transfers for business payments 
+—[W-9 and 1099 Management] (https://melio.com/1099-and-w9-management/) Simplified tax form collection and filing for vendors and contractors 
+—[International Payments] (https://melio.com/international-payments/) Send payments to vendors in 80 countries with FX support for 15 currencies 
+—[Auto Bill Capture] (https://melio.com/easy-bill-capture/) Scan bills, import invoices directly from Gmail, or send invoices to your Bills tab to save time on manual data entry 
+—[Custom Payment Links] (https://melio.com/accounts-receivable/custom-payment-link/) Create unique payment links in under 2 minutes to get paid by ACH or card online, with the option to choose who pays card processing fees
