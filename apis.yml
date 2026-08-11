@@ -69,6 +69,8 @@ apis:
         url: https://help.melio.com/hc/en-us
 
 common:
+  - type: OpenIDConnect
+    url: https://meliopayments.com/.well-known/oauth-authorization-server
   - type: VulnerabilityDisclosure
     url: security/melio-vulnerability-disclosure.yml
   - type: DomainSecurity
