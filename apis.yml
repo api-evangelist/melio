@@ -9,6 +9,17 @@ description: >-
   Melio has processed over $100B in payments for 100,000+ business users and
   2M+ vendors.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-11'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: approval
