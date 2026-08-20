@@ -44,6 +44,17 @@ tags:
   - Bill Pay
   - Vendor Payments
   - ACH
+  - Fintech
+  - Small Business
+  - Embedded Finance
+  - Payment Processing
+tags_raw:
+  - B2B Payments
+  - Accounts Payable
+  - Accounts Receivable
+  - Bill Pay
+  - Vendor Payments
+  - ACH
   - FinTech
   - Small Business
   - Embedded Finance
@@ -60,6 +71,12 @@ apis:
     humanURL: https://meliopayments.com/partners/
     baseURL: https://api.meliopayments.com
     tags:
+      - Payments
+      - Bills
+      - Vendors
+      - ACH
+      - Webhook
+    tags_raw:
       - Payments
       - Bills
       - Vendors
